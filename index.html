@@ -1144,6 +1144,49 @@
         transform: scale(1.05);
       }
 
+      /* Reset anchor styling on cards */
+      a.work-card,
+      a.more-card {
+        color: inherit;
+        text-decoration: none;
+        display: flex;
+        flex-direction: column;
+        cursor: none; /* keeps your custom cursor */
+      }
+
+      /* Subtle arrow hint on hover */
+      a.work-card::after {
+        content: "↗";
+        position: absolute;
+        top: 16px;
+        right: 16px;
+        font-size: 1.2rem;
+        color: rgba(255, 255, 255, 0);
+        transition: all 0.4s;
+        z-index: 5;
+      }
+
+      a.work-card:hover::after {
+        color: var(--accent);
+      }
+
+      a.more-card {
+        position: relative;
+      }
+
+      a.more-card::after {
+        content: "↗";
+        position: absolute;
+        top: 20px;
+        right: 20px;
+        font-size: 1rem;
+        color: rgba(255, 255, 255, 0);
+        transition: all 0.4s;
+      }
+
+      a.more-card:hover::after {
+        color: var(--accent);
+      }
       /* ═══ MORE PROJECTS GRID ═══ */
       .more-section {
         position: relative;
@@ -2123,7 +2166,12 @@
         <p>Every project is a controlled demolition of expectations.</p>
       </div>
       <div class="works-track" id="worksTrack">
-        <div class="work-card">
+        <a
+          href="https://github.com/Okeha/SignrrGPT"
+          target="_blank"
+          class="work-card"
+          data-hover
+        >
           <div class="work-vis">
             <img
               src="./assets/images/logos/sign_logo.png"
@@ -2145,8 +2193,8 @@
               ><span>THREE.JS</span>
             </div>
           </div>
-        </div>
-        <div class="work-card">
+        </a>
+        <a href="#" target="_blank" class="work-card" data-hover>
           <div class="work-vis">
             <img
               src="./assets/images/logos/jarvis_logo.png"
@@ -2168,8 +2216,13 @@
               ><span>WEBXR</span>
             </div>
           </div>
-        </div>
-        <div class="work-card">
+        </a>
+        <a
+          href="https://github.com/Okeha/Lung-Adernocarcinoma-Treatment-Method-and-Durable-Clinical-Benefit-Prediction-Model"
+          target="_blank"
+          class="work-card"
+          data-hover
+        >
           <div class="work-vis">
             <img
               src="./assets/images/logos/lung_cancer_logo.png"
@@ -2191,8 +2244,13 @@
               ><span>DATA SCIENCE</span>
             </div>
           </div>
-        </div>
-        <div class="work-card">
+        </a>
+        <a
+          href="https://scholarship-finder.netlify.app/views/html/index.html"
+          target="_blank"
+          class="work-card"
+          data-hover
+        >
           <div class="work-vis">
             <img
               src="./assets/images/logos/scholarship_logo.png"
@@ -2214,8 +2272,13 @@
               ><span>AUTOMATION</span>
             </div>
           </div>
-        </div>
-        <div class="work-card">
+        </a>
+        <a
+          href="https://moralehai.vercel.app/"
+          target="_blank"
+          class="work-card"
+          data-hover
+        >
           <div class="work-vis">
             <img
               src="./assets/images/logos/morale_logo.png"
@@ -2237,7 +2300,7 @@
               ><span>MENTAL HEALTH</span>
             </div>
           </div>
-        </div>
+        </a>
       </div>
     </section>
 
@@ -2245,7 +2308,12 @@
     <section class="more-section" id="moreSection">
       <div class="more-header"><h3>& MORE EXPERIMENTS</h3></div>
       <div class="more-grid">
-        <div class="more-card">
+        <a
+          href="https://agrotechminds.netlify.app/"
+          target="_blank"
+          class="more-card"
+          data-hover
+        >
           <div class="mc-title">AGROTECH MINDS</div>
           <p class="mc-desc">
             Microservices farm management platform with ML yield prediction. 80%
@@ -2255,8 +2323,13 @@
             <span>PYTHON</span><span>FASTAPI</span><span>POSTGRESQL</span
             ><span>ML</span>
           </div>
-        </div>
-        <div class="more-card">
+        </a>
+        <a
+          href="https://verses-for-you.netlify.app/templatemo_493_snapshot/index.html"
+          target="_blank"
+          class="more-card"
+          data-hover
+        >
           <div class="mc-title">BIBLE VERSE GENERATOR</div>
           <p class="mc-desc">
             Mood-based scripture recommendations. Tell it how you feel, get the
@@ -2265,8 +2338,13 @@
           <div class="mc-tags">
             <span>AI</span><span>NLP</span><span>FULL STACK</span>
           </div>
-        </div>
-        <div class="more-card">
+        </a>
+        <a
+          href="https://buy-pay.netlify.app/qrpay/index.html"
+          target="_blank"
+          class="more-card"
+          data-hover
+        >
           <div class="mc-title">DIGITAL WALLET SIM</div>
           <p class="mc-desc">
             QR code payment system simulation. Scan, pay, done.
@@ -2274,8 +2352,13 @@
           <div class="mc-tags">
             <span>QR</span><span>PAYMENTS</span><span>FULL STACK</span>
           </div>
-        </div>
-        <div class="more-card">
+        </a>
+        <a
+          href="https://super-suspicious-website.netlify.app/"
+          target="_blank"
+          class="more-card"
+          data-hover
+        >
           <div class="mc-title">SUPER SUSPICIOUS SITE 💀</div>
           <p class="mc-desc">
             A website to ask your girlfriend to be your valentine. She said yes
@@ -2284,8 +2367,13 @@
           <div class="mc-tags">
             <span>HTML</span><span>CSS</span><span>JS</span><span>ROMANCE</span>
           </div>
-        </div>
-        <div class="more-card">
+        </a>
+        <a
+          href="https://twitter-image-collager.netlify.app/home"
+          target="_blank"
+          class="more-card"
+          data-hover
+        >
           <div class="mc-title">TWITTER IMAGE COLLAGER</div>
           <p class="mc-desc">
             Generate optimized image collages for Twitter's 4-image layout.
@@ -2294,7 +2382,7 @@
           <div class="mc-tags">
             <span>IMAGE PROCESSING</span><span>WEB APP</span>
           </div>
-        </div>
+        </a>
       </div>
     </section>
 
@@ -2517,7 +2605,7 @@
     <section class="contact" id="contact">
       <div class="contact-bg">LET'S BUILD</div>
       <div class="contact-inner">
-        <div class="contact-eye">READY TO BREAK THINGS?</div>
+        <div class="contact-eye">READY TO BUILD THINGS?</div>
         <h2>LET'S<br />BUILD</h2>
         <p class="contact-sub">
           Currently open to new opportunities. If you need a fearless engineer
